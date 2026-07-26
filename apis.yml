@@ -1,7 +1,31 @@
 aid: evonetix
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/evonetix.png
 name: Evonetix
-description: Evonetix is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Evonetix is a Cambridge, UK deep-technology company developing a benchtop DNA
+  synthesis platform built on semiconductor technology. Its core innovation is a
+  silicon chip carrying thousands of independently thermally-controlled reaction
+  sites, allowing many DNA strands to be synthesised in parallel with per-site
+  temperature control, in-process error detection and correction, and assembly
+  of high-fidelity genes at the desktop. The company's goal is to give synthetic
+  biology, life-science, and drug-discovery researchers accurate, on-demand
+  access to synthetic DNA without relying on centralised outsourced gene
+  foundries. Evonetix was surfaced as a portfolio company of the deep-tech
+  venture firm DCVC and added to the API Evangelist network. As of this
+  enrichment pass the company publishes no public API, developer portal, or SDK,
+  and its primary web domain (evonetix.com) resolves to a suspended-account
+  placeholder page.
 url: https://raw.githubusercontent.com/api-evangelist/evonetix/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +33,32 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website-status: suspended
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Synthetic Biology
+- DNA Synthesis
+- Semiconductor
+- Biotechnology
+- Gene Synthesis
+- Life Sciences
+- Deep Tech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/evonetix-domain-security.yml
+- type: Website
+  url: https://www.evonetix.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
